@@ -27,6 +27,7 @@ public class ShapeTester {
                     c.computeArea();
                     c.computePerimeter();
                     c.displayShape();
+                    c.draw();
                     break;
                 case "s":
                     Square s = new Square();
@@ -34,6 +35,7 @@ public class ShapeTester {
                     s.computeArea();
                     s.computePerimeter();
                     s.displayShape();
+                    s.draw();
                     break;
                 case "r":
                     Rectangle r = new Rectangle();
@@ -41,6 +43,7 @@ public class ShapeTester {
                     r.computeArea();
                     r.computePerimeter();
                     r.displayShape();
+                    r.draw();
                     break;
                 case "x":
                     exit = true;

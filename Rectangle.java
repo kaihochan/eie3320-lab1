@@ -6,8 +6,9 @@
  * @date    30 Sept 2022
  */
 
+import java.awt.*;
 import java.util.Scanner;
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements Drawable {
     private float length;
     private float width;
 
@@ -40,5 +41,9 @@ public class Rectangle extends Shape {
     public void displayShape() {
         System.out.printf("Area of square = %f%n", super.area);
         System.out.printf("Perimeter of square = %f%n", super.perimeter);
+    }
+    
+    public void draw() {
+        Canvas.getCanvas().draw(this, "blue", new java.awt.geom.Rectangle2D.Float(0, 0, this.width, this.length));
     }
 }

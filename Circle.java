@@ -6,8 +6,9 @@
  * @date    30 Sept 2022
  */
 
+import java.awt.*;
 import java.util.Scanner;
-public class Circle extends Shape {
+public class Circle extends Shape implements Drawable {
     private float radius;
 
     public Circle() {
@@ -22,7 +23,6 @@ public class Circle extends Shape {
         Scanner input = new Scanner(System.in);
         System.out.println("Please input the radius:");
         this.radius = input.nextFloat();
-        System.out.println(this.radius);
     }
 
     public void computeArea() {
@@ -36,5 +36,9 @@ public class Circle extends Shape {
     public void displayShape() {
         System.out.printf("Area of circle = %f%n", super.area);
         System.out.printf("Perimeter of circle = %f%n", super.perimeter);
+    }
+    
+    public void draw() {
+        Canvas.getCanvas().draw(this, "yellow", new java.awt.geom.Ellipse2D.Float(100, 100, this.radius, this.radius));
     }
 }
