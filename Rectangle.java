@@ -39,8 +39,8 @@ public class Rectangle extends Shape implements Drawable {
     }
 
     public void displayShape() {
-        System.out.printf("Area of square = %f%n", super.area);
-        System.out.printf("Perimeter of square = %f%n", super.perimeter);
+        System.out.printf("Area of rectangle = %f%n", super.area);
+        System.out.printf("Perimeter of rectangle = %f%n", super.perimeter);
     }
     
     public void draw() {
