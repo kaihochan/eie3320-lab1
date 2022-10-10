@@ -10,8 +10,8 @@ import java.util.Scanner;
 public class ShapeTester {
     public static void main(String args[]) {
         boolean exit = false;
+        Scanner input = new Scanner(System.in);
         while (!exit) {
-            Scanner input = new Scanner(System.in);
             System.out.println("*****************************************");
             System.out.println("* Please choose one of the followings:  *");
             System.out.println("* Press 'c' - Circle                    *");

@@ -16,7 +16,7 @@ public abstract class Shape implements Drawable {
     // To compute the shape’s area
     abstract public void computeArea();
     
-    // To computer the shape’s perimeter
+    // To compute the shape’s perimeter
     abstract public void computePerimeter();
     
     // To display the area and perimeter of the shape

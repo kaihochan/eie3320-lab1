@@ -7,5 +7,6 @@
  */
 
 public interface Drawable {
+    //Display the object in the Canvas.
     public abstract void draw();
 }
